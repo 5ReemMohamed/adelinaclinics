@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    /* =========================================================
-       HEADER & MOBILE MENU
-    ========================================================= */
+  
 
     const header = document.getElementById("mainHeader");
     const mobileMenu = document.getElementById("mobileMenu");
@@ -174,9 +172,7 @@ document.addEventListener("DOMContentLoaded", function () {
     );
 
 
-    /* =========================================================
-       HERO ANIMATION
-    ========================================================= */
+   
 
     const hero = document.getElementById("hero");
 
@@ -217,15 +213,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     item.addEventListener("click", function () {
 
-      // Remove active from all
       navItems.forEach(function (nav) {
         nav.classList.remove("active");
       });
 
-      // Add active to clicked item
       this.classList.add("active");
 
-      // Small click animation
       this.classList.add("clicked");
 
       setTimeout(() => {
@@ -236,9 +229,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   });
 
-    /* =========================================================
-       STATISTICS SECTION
-    ========================================================= */
+ 
 
     const statisticsSection =
         document.getElementById("statistics");
@@ -495,9 +486,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    /* =========================================================
-       FAQ
-    ========================================================= */
+
 
     const faqButtons =
         document.querySelectorAll(
@@ -617,9 +606,7 @@ document.addEventListener("DOMContentLoaded", function () {
     );
 
 
-    /* =========================================================
-       CONTACT FORM
-    ========================================================= */
+
 
     const section =
         document.querySelector("#contact");
@@ -670,7 +657,6 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelector("#messageError");
 
 
-    /* Contact Section Animation */
 
     if (section) {
 
@@ -749,7 +735,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    /* Contact Error Functions */
 
     function setError(
         input,
@@ -904,7 +889,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    /* Contact Input Events */
 
     if (
         nameInput &&
@@ -999,7 +983,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    /* Contact Submit */
 
     if (form) {
 
@@ -1087,7 +1070,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    /* New Request Button */
 
     if (newRequestBtn) {
 
@@ -1120,9 +1102,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
  
 
-    /* =========================================================
-       CASES DATA
-    ========================================================= */
+ 
 
     const casesData = [
 
@@ -1371,9 +1351,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ];
 
 
-    /* =========================================================
-       CASES / SWIPER
-    ========================================================= */
+ 
 
     const casesWrapper =
         document.getElementById(
@@ -1386,7 +1364,6 @@ document.addEventListener("DOMContentLoaded", function () {
         typeof Swiper !== "undefined"
     ) {
 
-        /* Create Cases HTML */
 
         casesData.forEach(
             function (
@@ -1405,7 +1382,6 @@ document.addEventListener("DOMContentLoaded", function () {
                                     "";
 
 
-                                /* IMAGE */
 
                                 if (
                                     media.type ===
@@ -1435,7 +1411,6 @@ document.addEventListener("DOMContentLoaded", function () {
                                 }
 
 
-                                /* VIDEO */
 
                                 if (
                                     media.type ===
@@ -1578,7 +1553,6 @@ document.addEventListener("DOMContentLoaded", function () {
         );
 
 
-        /* Individual Media Swipers */
 
         casesData.forEach(
             function (
@@ -1678,11 +1652,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     );
             }
         );
-/* =========================================================
-   IMAGE MODAL
-========================================================= */
 
-        /* Main Cases Swiper */
+
 
         const casesSwiperElement =
             document.querySelector(
@@ -1761,24 +1732,20 @@ if (
 
     new Swiper(offersSwiperElement, {
 
-        /* عدد الصور */
         slidesPerView: 1,
         centeredSlides: true,
 
         spaceBetween: 15,
 
-        /* الحركة */
         loop: true,
         speed: 700,
 
-        /* التشغيل التلقائي */
         autoplay: {
             delay: 2500,
             disableOnInteraction: false,
             pauseOnMouseEnter: true
         },
 
-        /* السماح بالسحب */
         grabCursor: true,
 
         /* Navigation */
@@ -1787,13 +1754,11 @@ if (
             prevEl: ".offers-prev"
         },
 
-        /* Pagination */
         pagination: {
             el: ".offers-pagination",
             clickable: true
         },
 
-        /* Responsive */
         breakpoints: {
 
             576: {
@@ -1856,9 +1821,7 @@ if (videoModal && modalVideo && modalVideoSource) {
         modalVideo.load();
     });
 }
-/* =========================================================
-   IMAGE MODAL
-========================================================= */
+
 
 const imageModal = document.getElementById("imageModal");
 const modalImage = document.getElementById("modalImage");
@@ -1889,9 +1852,6 @@ if (imageModal && modalImage) {
 
 
 
-    /* =========================================================
-       AOS
-    ========================================================= */
 
     if (
         typeof AOS !== "undefined"

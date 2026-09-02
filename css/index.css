@@ -4734,7 +4734,6 @@ textarea.form-input {
   align-items: center;
 }
 
-/* Content */
 
 .booking-content {
   max-width: 850px;
@@ -6930,9 +6929,7 @@ textarea.form-input {
     padding-right: 5px;
   }
 }
-/* ==============================
-   MEDIA MODAL
-================================ */
+
 
 #mediaModal .modal-dialog {
   max-width: 1100px;
@@ -6943,7 +6940,6 @@ textarea.form-input {
   background: #133235;
 }
 
-/* Image & Video */
 .modal-media {
   display: block;
   width: 100%;
@@ -6954,7 +6950,6 @@ textarea.form-input {
   margin: auto;
 }
 
-/* Video specifically */
 #modalMediaContainer video {
   width: 100%;
   height: auto;
@@ -6962,7 +6957,6 @@ textarea.form-input {
   background: var(--accent-foreground);
 }
 
-/* Image specifically */
 #modalImage {
   width: 100%;
   height: auto;
@@ -6972,13 +6966,11 @@ textarea.form-input {
   border-radius: 30px;
 }
 
-/* Close button */
 #mediaModal .btn-close {
   opacity: 1;
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Mobile */
 @media (max-width: 768px) {
   #mediaModal .modal-dialog {
     width: 96%;
@@ -7065,9 +7057,7 @@ textarea.form-input {
   }
 }
 
-/* ================================
-Offers Section
-================================ */
+
 
 .offers-section {
   position: relative;
@@ -7083,7 +7073,6 @@ Offers Section
   line-height: 1.9;
 }
 
-/* Swiper */
 
 .offersSwiper {
   position: relative;
@@ -7107,7 +7096,6 @@ Offers Section
   z-index: 10;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
-/* Offer Card */
 
 .offer-card {
   position: relative;
@@ -7145,7 +7133,6 @@ Offers Section
   transform: scale(1.04);
 }
 
-/* Navigation */
 
 .offers-prev,
 .offers-next {
@@ -7195,7 +7182,6 @@ Offers Section
   transform: translateY(-50%) scale(1.08);
 }
 
-/* Pagination */
 
 .offers-pagination {
   bottom: 5px !important;
@@ -7215,7 +7201,6 @@ Offers Section
   opacity: 1;
 }
 
-/* Tablet */
 
 @media (max-width: 991px) {
   .offersSwiper {
@@ -7230,7 +7215,6 @@ Offers Section
   }
 }
 
-/* Mobile */
 
 @media (max-width: 575px) {
   .offersSwiper {
@@ -7263,15 +7247,12 @@ Offers Section
     transform: scale(1.05);
   }
 }
-/* =========================================
-   MOBILE BOTTOM NAVBAR
-========================================= */
+
 
 .mobile-bottom-nav {
   display: none;
 }
 
-/* Mobile only */
 @media (max-width: 991.98px) {
   .mobile-bottom-nav {
     display: block;
@@ -7291,7 +7272,6 @@ Offers Section
 
     z-index: 9999;
 
-    /* Safe area for iPhone */
     padding-bottom: env(safe-area-inset-bottom);
     border-radius: 20px 20px 0 0;
   }
@@ -7307,9 +7287,7 @@ Offers Section
     padding: 0 8px;
   }
 
-  /* =========================================
-     NAV ITEM
-  ========================================= */
+
 
   .mobile-nav-item {
     position: relative;
@@ -7353,7 +7331,6 @@ Offers Section
     line-height: 1.2;
   }
 
-  /* Hover / Active */
 
   .mobile-nav-item:hover {
     color: #c6a15b;
@@ -7369,9 +7346,7 @@ Offers Section
     color: #c6a15b;
   }
 
-  /* =========================================
-     BOOKING CENTER BUTTON
-  ========================================= */
+
 
   .mobile-nav-booking {
     justify-content: flex-end;
@@ -7420,7 +7395,6 @@ Offers Section
     font-weight: 600;
   }
 
-  /* Center button hover */
 
   .mobile-nav-booking:hover .booking-circle {
     transform: translateY(-3px) scale(1.04);
@@ -7428,24 +7402,18 @@ Offers Section
     box-shadow: 0 8px 22px rgba(0, 0, 0, 0.17);
   }
 
-  /* =========================================
-     CLICK ANIMATION
-  ========================================= */
+ 
 
   .mobile-nav-item.clicked {
     transform: scale(0.92);
   }
 
-  /* =========================================
-     BODY SPACE
-     Prevent navbar from covering content
-  ========================================= */
+
 
   body {
     padding-bottom: 76px;
   }
 
-  /* Don't add extra body space on desktop */
   @media (min-width: 992px) {
     body {
       padding-bottom: 0;
@@ -7453,9 +7421,7 @@ Offers Section
   }
 }
 
-/* =========================================
-   VERY SMALL SCREENS
-========================================= */
+
 
 @media (max-width: 360px) {
   .mobile-nav-container {
@@ -7478,9 +7444,7 @@ Offers Section
   }
 }
 
-/* =========================================
-   HERO ACTIONS
-========================================= */
+
 
 .hero-actions {
   display: flex;
@@ -7489,9 +7453,7 @@ Offers Section
   flex-wrap: wrap;
 }
 
-/* =========================================
-   PREMIUM GOLD BUTTON
-========================================= */
+
 
 .btn-gold-custom {
   position: relative;
@@ -7534,7 +7496,6 @@ Offers Section
     box-shadow 0.3s ease;
 }
 
-/* ✨ لمعان الزر */
 
 .btn-gold-custom::before {
   content: "";
@@ -7559,7 +7520,6 @@ Offers Section
   transition: left 0.7s ease;
 }
 
-/* Hover */
 
 .btn-gold-custom:hover {
   color: #fff !important;
@@ -7584,9 +7544,7 @@ Offers Section
 .btn-gold-custom:hover i {
   transform: translateX(-3px);
 }
-/* =========================================
-   GHOST BUTTON
-========================================= */
+
 
 .btn-outline-custom {
   display: inline-flex;
@@ -7624,9 +7582,7 @@ Offers Section
   transform: translateY(-2px);
 }
 
-/* =========================================
-   HERO STATS
-========================================= */
+
 
 .hero-stats {
   display: flex;
@@ -7638,9 +7594,7 @@ Offers Section
   width: 100%;
 }
 
-/* =========================================
-   STAT
-========================================= */
+
 
 .hero-stat {
   position: relative;
@@ -7675,7 +7629,6 @@ Offers Section
     background 0.35s ease;
 }
 
-/* subtle gold line */
 
 .hero-stat::before {
   content: "";
@@ -7693,7 +7646,6 @@ Offers Section
   opacity: 0.9;
 }
 
-/* Hover */
 
 .hero-stat:hover {
   transform: translateY(-5px);
@@ -7703,9 +7655,7 @@ Offers Section
   box-shadow: 0 16px 35px rgba(0, 0, 0, 0.12);
 }
 
-/* =========================================
-   ICON
-========================================= */
+
 
 .hero-stat-icon {
   flex-shrink: 0;
@@ -7734,9 +7684,7 @@ Offers Section
   font-size: 17px;
 }
 
-/* =========================================
-   VALUE
-========================================= */
+
 
 .hero-stat-value {
   margin: 0 0 3px;
@@ -7749,9 +7697,7 @@ Offers Section
   line-height: 1;
 }
 
-/* =========================================
-   LABEL
-========================================= */
+
 
 .hero-stat-label {
   margin: 0;
@@ -7764,9 +7710,7 @@ Offers Section
   white-space: nowrap;
 }
 
-/* =========================================
-   MOBILE
-========================================= */
+
 
 @media (max-width: 767.98px) {
   .hero-stats {
@@ -7818,9 +7762,7 @@ Offers Section
   }
 }
 
-/* =========================
-   Departments Section
-========================= */
+
 
 .departments-section {
   background: var(--background);
@@ -7828,7 +7770,6 @@ Offers Section
   overflow: hidden;
 }
 
-/* Section Heading */
 
 .section-heading {
   max-width: 760px;
@@ -7873,9 +7814,7 @@ Offers Section
   margin: 0 auto;
 }
 
-/* =========================
-   Department Card
-========================= */
+
 
 .department-card {
   position: relative;
@@ -7908,7 +7847,6 @@ Offers Section
   box-shadow: 0 18px 45px rgba(19, 50, 53, 0.1);
 }
 
-/* Icon */
 
 .department-icon {
   width: 72px;
@@ -7941,7 +7879,6 @@ Offers Section
   transform: rotate(-5deg) scale(1.05);
 }
 
-/* Content */
 
 .department-content {
   position: relative;
@@ -7979,7 +7916,6 @@ Offers Section
   margin-bottom: 25px;
 }
 
-/* Link */
 
 .department-link {
   display: flex;
@@ -8010,7 +7946,6 @@ Offers Section
   transform: translateX(-4px);
 }
 
-/* Decorative Circle */
 
 .department-decoration {
   position: absolute;
@@ -8037,9 +7972,7 @@ Offers Section
   opacity: 0.8;
 }
 
-/* =========================
-   Responsive
-========================= */
+
 
 @media (max-width: 767px) {
   .departments-section {
@@ -8066,9 +7999,7 @@ Offers Section
     font-size: 14px;
   }
 }
-/* =========================
-   Offers Images
-========================= */
+
 
 .offer-image-btn {
   display: block;
@@ -8095,9 +8026,7 @@ Offers Section
   transform: scale(1.04);
 }
 
-/* =========================
-   Image Modal
-========================= */
+
 
 .image-modal-content {
   background: transparent;
@@ -8195,18 +8124,14 @@ Offers Section
 .offer-image-btn:hover .video-play-icon {
     transform: translate(-50%, -50%) scale(1.1);
 }
-/* =========================
-   Terms Section
-========================= */
+
 
 .terms-section {
     padding: 80px 0 100px;
 }
 
 
-/* =========================
-   Sidebar
-========================= */
+
 
 .terms-sidebar {
     position: sticky;
@@ -8294,9 +8219,7 @@ Offers Section
 }
 
 
-/* =========================
-   Terms Cards
-========================= */
+
 
 .terms-content {
     display: flex;
@@ -8363,9 +8286,6 @@ Offers Section
 }
 
 
-/* =========================
-   Lists
-========================= */
 
 .terms-list {
     list-style: none;
@@ -8388,9 +8308,7 @@ Offers Section
 }
 
 
-/* =========================
-   Info Box
-========================= */
+
 
 .info-box {
     display: flex;
@@ -8414,9 +8332,7 @@ Offers Section
 }
 
 
-/* =========================
-   Mini Cards
-========================= */
+
 
 .terms-grid {
     display: grid;
@@ -8450,9 +8366,7 @@ Offers Section
 }
 
 
-/* =========================
-   Warning
-========================= */
+
 
 .warning-box {
     display: flex;
@@ -8489,9 +8403,7 @@ Offers Section
 }
 
 
-/* =========================
-   Privacy
-========================= */
+
 
 .privacy-features {
     display: grid;
@@ -8524,9 +8436,6 @@ Offers Section
 }
 
 
-/* =========================
-   Contact
-========================= */
 
 .contact-terms {
     background: var(--primary);
